@@ -1,15 +1,12 @@
-###### IDE folders ######
+##### IDE folders #####
 .vscode/
 .vs/
 .idea/
 
-######## OCaml ########
-# Ignore all
-ocaml/**/*
-!ocaml/**/
-# Except required scripts
-!ocaml/**/*.ml
-# Filter test files and build cache
-ocaml/**/test.ml
-ocaml/**/_build/
-ocaml/**/.exercism/
+#### Exercism cache ####
+*.exercism/
+
+##### Build cache #####
+*_build/
+*.pytest_cache/
+*__pycache__/
