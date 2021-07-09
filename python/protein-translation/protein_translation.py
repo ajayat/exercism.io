@@ -1,4 +1,4 @@
-def translation(strand):
+def translation(strand: str):
     match strand:  # new in 3.10: pattern-matching
         case "AUG":
             yield "Methionine"
@@ -18,7 +18,7 @@ def translation(strand):
             yield "STOP"
 
 
-def proteins(strand):
+def proteins(strand: str) -> list:
     proteins_list = []
     # idiom for clustering into 3-length groups
     for codon in zip(*[iter(strand)] * 3):
