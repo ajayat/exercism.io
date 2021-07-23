@@ -7,6 +7,14 @@
 **/.exercism/
 
 ##### Build cache #####
-**/_build/
+ocaml/**/_build/
+
+cpp/**/build/
+cpp/**/*.exe
+cpp/**/CMakeFiles/
+cpp/**/CmakeCache.txt
+cpp/**/cmake_install.cmake
+cpp/**/Makefile
+
 **/.pytest_cache/
 **/__pycache__/
