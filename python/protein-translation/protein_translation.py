@@ -1,31 +1,30 @@
-def translation(strand: str):
+def translation(strand: str) -> str:
     match strand:  # new in 3.10: pattern-matching
         case "AUG":
-            yield "Methionine"
+            return "Methionine"
         case "UUU" | "UUC":
-            yield "Phenylalanine"
+            return "Phenylalanine"
         case "UUA" | "UUG":
-            yield "Leucine"
+            return "Leucine"
         case "UCU" | "UCC" | "UCA" | "UCG":
-            yield "Serine"
+            return "Serine"
         case "UAU" | "UAC":
-            yield "Tyrosine"
+            return "Tyrosine"
         case "UGU" | "UGC":
-            yield "Cysteine"
+            return "Cysteine"
         case "UGG":
-            yield "Tryptophan"
+            return "Tryptophan"
         case "UAA" | "UAG" | "UGA":
-            yield "STOP"
+            return "STOP"
 
 
-def proteins(strand: str) -> list:
+def proteins(strand: str) -> list[str]:
     proteins_list = []
-    # idiom for clustering into 3-length groups
-    for codon in zip(*[iter(strand)] * 3):
-        for protein in translation("".join(codon)):
-            if protein == "STOP":
-                return proteins_list
-            if protein not in proteins_list:
-                proteins_list.append(protein)
-    
+
+    for i in range(0, len(strand), 3):
+        protein = translation(strand[i:i+3])
+        if protein == "STOP":
+            break
+        proteins_list.append(protein)
+
     return proteins_list

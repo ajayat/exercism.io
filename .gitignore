@@ -4,9 +4,9 @@
 .idea/
 
 #### Exercism cache ####
-*.exercism/
+**/.exercism/
 
 ##### Build cache #####
-*_build/
-*.pytest_cache/
-*__pycache__/
+**/_build/
+**/.pytest_cache/
+**/__pycache__/
