@@ -9,14 +9,13 @@
 
 // Declare a namespace for the function(s) we are exporting.
 // https://en.cppreference.com/w/cpp/language/namespace
-namespace hello_world {
-
+namespace hello_world 
+{
     // Declare the 'hello()' function, which takes no arguments and returns a
     // 'std::string'. The function itself is defined in the hello_world.cpp source
     // file. Because it is inside of the 'hello_world' namespace, it's full name is
     // 'hello_world::hello()'.
     std::string hello();
-
 }  // namespace hello_world
 
 #endif

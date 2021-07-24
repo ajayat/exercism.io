@@ -11,7 +11,7 @@ Solutions
 
   * - Problem
     - Python
-    - Ocaml
+    - OCaml
     - C++
   * - Hello World
     - `solved <python/hello-world/hello_world.py>`__ 
@@ -64,7 +64,15 @@ Solutions
   * - Matrix
     - `solved <python/matrix/matrix.py>`__
     - 
+    - 
+  * - Hamming
+    - 
+    - 
+    - `solved <cpp/hamming/hamming.cpp>`__ (optional)
+  * - Reverse String
     -
+    - 
+    - `solved <cpp/reverse-string/reverse_string.cpp>`__
   
 
 More solutions and languages will be added soon !
