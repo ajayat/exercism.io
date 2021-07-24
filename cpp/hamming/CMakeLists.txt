@@ -7,6 +7,11 @@ cmake_minimum_required(VERSION 3.5.1)
 # Name the project after the exercise
 project(${exercise} CXX)
 
+# Copy catch.hpp in ../catchorg-shared/ directory to test/ folder
+if(NOT EXISTS test/catch.hpp)
+    configure_file(../catchorg-shared/catch.hpp test/catch.hpp COPYONLY)
+endif()
+
 # Get a source filename from the exercise name by replacing -'s with _'s
 string(REPLACE "-" "_" file ${exercise})
 

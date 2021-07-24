@@ -1,12 +1,15 @@
-##### IDE folders #####
+### IDE folders ###
 .vscode/
 .vs/
 .idea/
 
-#### Exercism cache ####
+### Exercism cache ###
 **/.exercism/
 
-##### Build cache #####
+### C++ catch framework ###
+cpp/**/test/catch.hpp
+
+### Build files and cache ###
 ocaml/**/_build/
 
 cpp/**/build/
