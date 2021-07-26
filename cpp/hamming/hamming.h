@@ -7,7 +7,8 @@
 
 namespace hamming 
 {
-    int compute(std::string first_strand, std::string second_strand);
+    std::size_t compute(const std::string& first_strand, 
+                        const std::string& second_strand);
 }
 
 #endif // HAMMING_H

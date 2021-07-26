@@ -5,7 +5,7 @@
 
 namespace reverse_string 
 {
-    std::string reverse_string(std::string string);
+    std::string reverse_string(const std::string& string);
 }
 
 #endif // REVERSE_STRING_H

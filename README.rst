@@ -70,9 +70,13 @@ Solutions
     - 
     - `solved <cpp/hamming/hamming.cpp>`__ (optional)
   * - Reverse String
-    -
+    - `solved <python/reverse-string/reverse_string.py>`__ (optional)
     - 
     - `solved <cpp/reverse-string/reverse_string.cpp>`__
+  * - ISBN Verifier
+    - `solved <python/isbn-verifier/isbn_verifier.py>`__ (optional)
+    - 
+    - 
   
 
 More solutions and languages will be added soon !
